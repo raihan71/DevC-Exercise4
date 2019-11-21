@@ -1,11 +1,163 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Exercise 4</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="css/slider.css" rel="stylesheet">
+	<link href="css/popup.css" rel="sylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 </head>
 <body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
+	<header>
+		<div id="header-inner">
+			<a id="logo"></a>
+			<nav>
+				<a href="" id="menu-icon"></a>
+				<ul>
+					<li><a href="" class="current">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!--END HEADER-->
+	<section class="banner">
+			<div class="banner-inner">
+				<img src="img/undraw_responsive.png">
+			</div>
+	</section>
+<!--END BANNER-->
+	<section class="one-fourth" id="html">
+		<td><i class="fa fa-html5"></i></td>
+		<h3>HTML</h3>
+		
+	</section>
+	<section class="one-fourth" id="css">
+	<td><i class="fa fa-css3"></i></td>
+		<h3>CSS3</h3>
+	
+	</section>
+	<section class="one-fourth" id="seo">
+			<td><i class="fa fa-search"></i></td>
+			<h3>SEO</h3>
+	</section>
+	<section class="one-fourth" id="social">
+			<td><i class="fa fa-users"></i></td>
+			<H3>USERS</H3>
+	</section>
+<!--end-->
+	<section class="inner-wrapper">
+		<article id="tablet">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="img/hand_ipad.png" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="img/hand_mobile.png" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="img/desktop.png" style="width:100%">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+			</div>
+		</article>
+		<aside id="tablet">
+			<h2>MOBILE. TABLET. DESKTOP.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</aside>
+	</section>
+	
+<!--END-->
+	<section class="inner-wrapper3">
+		<section class="one-third" id="google">
+			<h3>Google</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+		</section>
+		<section class="one-third" id="marketing">
+			<h3>Market</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section class="one-third" id="customer">
+			<h3>Happy Custom</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+	</section>
+<!--end-->
+	<section id="smile">
+		<h2>:)</h2>
+	</section>
+<!--end-->
+	<footer>
+		<ul  class="social">
+			<li><a href=""><i class="fa fa-facebook"></i></a></li>
+			<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+			<li><a href=""><i class="fa fa-twitter"></i></a></li>
+			<li><a href=""><i class="fa fa-youtube"></i></a></li>
+			<li><a href=""><i class="fa fa-instagram"></i></a></li>
+		</ul>
+	</footer>
+<!--end-->
+	<footer class="second">
+		<p>&copy; RAY</p>
+	</footer>
+
+<!--end-->
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+		}
+		slides[slideIndex-1].style.display = "block";  
+	}
+	</script>
 </body>
 </html>
